@@ -1,6 +1,6 @@
 package net.htlgkr.pos2.KeiserPatrice3;
 
-public class Weapon {
+public class Weapon{
     private String name;
     private CombatType combatType;
     private DamageType damageType;
@@ -17,6 +17,11 @@ public class Weapon {
         this.speed = speed;
         this.strength = strength;
         this.value = value;
+    }
+
+    @Override
+    public String toString() {
+        return name+" "+combatType+" "+damageType+" "+damage+" "+speed+" "+strength+" "+value;
     }
 
     public String getName() {
