@@ -2,22 +2,36 @@ package net.htlgkr.pos2.KeiserPatrice3;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Scanner;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.*;
+import java.util.stream.Stream;
 
 public class Weapons {
 
 
     public void readFile(String fileName) {
+
+
+
+
+
         List<Weapon> weapons = new ArrayList<>();
+
+        try {
+            Files.lines(Path.of(fileName)).filter(s -> (s.startsWith("name"))).;
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        {
+
+        }
         try {
             Scanner scanner = new Scanner(new File(fileName));
             while (scanner.hasNextLine()) {
-                weapons.stream().
                 String line = scanner.nextLine();
-                Comparator.
                 if(line.startsWith("name"));
                 else
                 {
@@ -31,5 +45,10 @@ public class Weapons {
         }
 
 
+    }
+    public static Stream deserialize(String s)
+    {
+        Stream strings = Arrays.stream(s.split(";"));
+        return strings;
     }
 }
