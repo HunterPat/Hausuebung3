@@ -17,6 +17,7 @@ public class WeaponControl {
         Printable printable = new Printable() {
             @Override
             public void print(List<Weapon> weapons) {
+                System.out.println("name"+ "combatType" + "damageType" + "damage" + "speed" + "strength" + "value");
                 weapons.forEach(weapon -> System.out.println(weapon.toString()));
             }
         };
