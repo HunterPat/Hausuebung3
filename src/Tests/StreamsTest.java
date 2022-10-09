@@ -1,4 +1,4 @@
-package net.htlgrieskirchen.pos3.streams;
+package Tests;
 
 import java.io.File;
 import java.io.IOException;
@@ -8,6 +8,11 @@ import java.util.ConcurrentModificationException;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
+
+import net.htlgkr.pos2.KeiserPatrice3.Aufgabe2.CombatType;
+import net.htlgkr.pos2.KeiserPatrice3.Aufgabe2.DamageType;
+import net.htlgkr.pos2.KeiserPatrice3.Aufgabe2.Streams;
+import net.htlgkr.pos2.KeiserPatrice3.Aufgabe2.Weapon;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;

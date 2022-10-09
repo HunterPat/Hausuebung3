@@ -1,4 +1,4 @@
-package net.htlgkr.pos2.KeiserPatrice3;
+package net.htlgkr.pos2.KeiserPatrice3.Aufgabe1;
 
 import java.util.List;
 
