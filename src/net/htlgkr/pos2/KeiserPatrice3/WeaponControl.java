@@ -17,8 +17,7 @@ public class WeaponControl {
         Printable printable = new Printable() {
             @Override
             public void print(List<Weapon> weapons) {
-                System.out.println("name"+ "combatType" + "damageType" + "damage" + "speed" + "strength" + "value");
-                weapons.forEach(weapon -> System.out.println(weapon.toString()));
+                System.out.println("name" + "combatType" + "damageType" + "damage" + "speed" + "strength" + "value");
             }
         };
 
@@ -28,10 +27,9 @@ public class WeaponControl {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        System.out.println("\n-----------------------------------------------------\n");
+        //TODO: Übung 1.6 und 1.7 nicht verstanden
         System.out.println("Sorted to highest damage: \n");
         weapons.sort(Comparator.comparingInt(Weapon::getDamage).reversed());
-        printable.print(weapons);
         System.out.println("\n-----------------------------------------------------\n");
         System.out.println("Sorted combatType alphabetically: \n");
         weapons.sort(Comparator.comparing(Weapon::getCombatType));
